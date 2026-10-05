@@ -1,0 +1,2761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Raai Rupa &amp; Raai Naresh | Christian Wedding Invitation</title>
+  <meta name="description" content="Join Raai Rupa Sri Sai Lakshmi and Raai Naresh as they celebrate their Christian wedding on 9 March 2027 at Luthern Church. Explore their wedding details, countdown, story, and special memories." />
+  <meta property="og:title" content="Raai Rupa & Raai Naresh | Christian Wedding Invitation" />
+  <meta property="og:description" content="Join Raai Rupa Sri Sai Lakshmi and Raai Naresh as they celebrate their Christian wedding on 9 March 2027 at Luthern Church." />
+  <meta property="og:type" content="website" />
+
+  <!-- Google Fonts: Cormorant Garamond (headings) + Inter (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       COLOR PALETTE & DESIGN TOKENS
+       ============================================================ */
+    :root {
+      --ivory:        #FFFDF9;
+      --cream:        #F8F3EE;
+      --blush:        #E8C7CC;
+      --dusty-rose:   #C9959F;
+      --charcoal:     #302B2D;
+      --taupe:        #8A7A7B;
+      --gold:         #B89B70;
+      --white:        #FFFFFF;
+
+      --font-heading: 'Cormorant Garamond', 'Playfair Display', Georgia, 'Times New Roman', serif;
+      --font-body:    'Inter', 'Lato', 'Helvetica Neue', Arial, sans-serif;
+
+      --shadow-soft:    0 4px 24px rgba(48, 43, 45, 0.06);
+      --shadow-medium:  0 8px 40px rgba(48, 43, 45, 0.10);
+      --shadow-hover:   0 16px 50px rgba(48, 43, 45, 0.14);
+
+      --radius-sm: 10px;
+      --radius-md: 18px;
+      --radius-lg: 28px;
+
+      --transition: 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --section-pad: clamp(4rem, 8vw, 7rem);
+      --max-width: 1200px;
+    }
+
+    /* ============================================================
+       RESET & BASE
+       ============================================================ */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--charcoal);
+      background-color: var(--ivory);
+      line-height: 1.6;
+      font-weight: 400;
+      overflow-x: hidden;
+    }
+
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font-family: inherit; cursor: pointer; border: none; background: none; }
+
+    ::selection { background: var(--blush); color: var(--charcoal); }
+    @media(max-width:800px){
+    .nav-inner{
+        padding:15px 20px
+    }
+
+    .menu-toggle{
+        display:block
+    }
+
+    .nav-links{
+        display:none;
+        ...
+    }
+
+    .hero-inner,
+    .blessing-grid,
+    .about-grid,
+    .location-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero-inner{
+        padding-top:70px;
+        text-align:center;
+    }
+
+    .hero-meta{
+        justify-content:center;
+    }
+
+    .detail-grid{
+        grid-template-columns:1fr;
+    }
+
+    .gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .timer{
+        gap:8px;
+    }
+}
+
+    /* ============================================================
+       TYPOGRAPHY HELPERS
+       ============================================================ */
+    .serif { font-family: var(--font-heading); }
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--charcoal);
+      margin-bottom: 0.75rem;
+    }
+    .section-subtitle {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: var(--taupe);
+      max-width: 560px;
+      margin: 0 auto 3rem;
+      text-align: center;
+      line-height: 1.5;
+    }
+    .divider {
+      width: 60px;
+      height: 1px;
+      background: var(--gold);
+      margin: 1.25rem auto;
+      border: none;
+    }
+    .divider--left { margin-left: 0; }
+
+    /* ============================================================
+       BUTTONS
+       ============================================================ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.85rem 2rem;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 50px;
+      transition: all var(--transition);
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    .btn--primary {
+      background: var(--dusty-rose);
+      color: var(--white);
+      box-shadow: 0 6px 20px rgba(201, 149, 159, 0.25);
+    }
+    .btn--primary:hover {
+      background: var(--charcoal);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(48, 43, 45, 0.2);
+    }
+    .btn--secondary {
+      background: transparent;
+      color: var(--charcoal);
+      border: 1px solid var(--charcoal);
+    }
+    .btn--secondary:hover {
+      background: var(--charcoal);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+    .btn--gold {
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+    }
+    .btn--gold:hover {
+      background: var(--gold);
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* ============================================================
+       LAYOUT
+       ============================================================ */
+    .section {
+      padding: var(--section-pad) 1.5rem;
+      position: relative;
+    }
+    .section-inner { max-width: var(--max-width); margin: 0 auto; }
+    .text-center { text-align: center; }
+
+    /* ============================================================
+       SCROLL REVEAL
+       ============================================================ */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.15s; }
+    .reveal-delay-2 { transition-delay: 0.3s; }
+    .reveal-delay-3 { transition-delay: 0.45s; }
+
+    /* ============================================================
+       DECORATIVE CROSS
+       ============================================================ */
+    .cross {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0;
+      color: var(--gold);
+      opacity: 0.8;
+    }
+    .cross .bar-v { width: 2px; height: 28px; background: currentColor; border-radius: 1px; }
+    .cross .bar-h { width: 14px; height: 2px; background: currentColor; border-radius: 1px; margin-top: 8px; }
+
+    .cross--sm .bar-v { height: 18px; }
+    .cross--sm .bar-h { width: 10px; margin-top: 5px; }
+
+    /* ============================================================
+       WELCOME / OPENING SCREEN
+       ============================================================ */
+    #welcome {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-image: linear-gradient(
+    rgba(255, 253, 249, 0.55),
+    rgba(255, 253, 249, 0.65)
+  ), url('Images/Christian.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  transition: opacity 1s ease, visibility 1s ease;
+  padding: 2rem;
+}
+    #welcome.hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    .welcome-content { max-width: 600px; }
+    .welcome-ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      color: var(--gold);
+    }
+    .welcome-ornament .line {
+      width: 50px; height: 1px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+    }
+    .welcome-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1.25rem;
+    }
+    .welcome-title {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      font-weight: 500;
+      line-height: 1.1;
+      color: var(--charcoal);
+      margin-bottom: 1.5rem;
+    }
+    .welcome-title .amp {
+      display: block;
+      font-style: italic;
+      color: var(--dusty-rose);
+      font-size: 0.6em;
+      margin: 0.2em 0;
+    }
+    .welcome-message {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      color: var(--taupe);
+      line-height: 1.6;
+      max-width: 480px;
+      margin: 0 auto 2.5rem;
+    }
+    .welcome-decoration {
+      position: absolute;
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    .welcome-decoration--tl { top: 40px; left: 40px; }
+    .welcome-decoration--br { bottom: 40px; right: 40px; transform: rotate(180deg); }
+
+    /* Floating petals */
+    .petal {
+      position: absolute;
+      width: 10px;
+      height: 10px;
+      background: var(--blush);
+      border-radius: 50% 0 50% 50%;
+      opacity: 0.4;
+      animation: floatPetal 12s infinite ease-in-out;
+    }
+    @keyframes floatPetal {
+      0%, 100% { transform: translate(0, 0) rotate(0deg); }
+      33%      { transform: translate(20px, -30px) rotate(120deg); }
+      66%      { transform: translate(-15px, 20px) rotate(240deg); }
+    }
+
+    /* ============================================================
+       NAVIGATION
+       ============================================================ */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 900;
+      padding: 1.25rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all var(--transition);
+    }
+    .nav.scrolled {
+      background: rgba(255, 253, 249, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: var(--shadow-soft);
+      padding: 0.75rem 2rem;
+    }
+    .nav-brand {
+      font-family: var(--font-heading);
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      letter-spacing: 0.02em;
+    }
+    .nav-brand .amp { color: var(--dusty-rose); font-style: italic; }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+      position: relative;
+      padding-bottom: 4px;
+      transition: color var(--transition);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0;
+      width: 0; height: 1px;
+      background: var(--gold);
+      transition: width var(--transition);
+    }
+    .nav-links a:hover { color: var(--dusty-rose); }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      padding: 8px;
+      z-index: 950;
+    }
+    .nav-toggle span {
+      width: 24px; height: 2px;
+      background: var(--charcoal);
+      border-radius: 2px;
+      transition: all var(--transition);
+    }
+    .nav-toggle.open span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
+
+    @media (max-width: 768px) {
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: fixed;
+        top: 0; left: 0; right: 0;
+        background: var(--cream);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 5rem 2rem 3rem;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease;
+        box-shadow: var(--shadow-medium);
+      }
+      .nav-links.open { transform: translateY(0); }
+      .nav-links a { font-size: 1rem; }
+    }
+
+    /* ============================================================
+       HERO — THE COUPLE
+       ============================================================ */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 8rem 1.5rem 4rem;
+      background: linear-gradient(170deg, var(--cream) 0%, var(--ivory) 60%, var(--cream) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg-shape {
+      position: absolute;
+      border-radius: 50%;
+      opacity: 0.15;
+      filter: blur(60px);
+      pointer-events: none;
+    }
+    .hero-bg-shape--1 { width: 400px; height: 400px; background: var(--blush); top: 10%; right: -100px; }
+    .hero-bg-shape--2 { width: 300px; height: 300px; background: var(--gold); bottom: 5%; left: -80px; opacity: 0.08; }
+
+    .hero-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1.2fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-photo-wrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .hero-photo {
+      width: 100%;
+      max-width: 280px;
+      aspect-ratio: 3 / 4;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--cream), var(--blush) 120%);
+      border: 1px solid rgba(184, 155, 112, 0.2);
+      box-shadow: var(--shadow-medium);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      transition: transform var(--transition);
+    }
+    .hero-photo:hover { transform: translateY(-6px); }
+    .hero-photo .placeholder-text {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--taupe);
+      text-align: center;
+      padding: 1rem;
+    }
+    .hero-photo img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+    }
+    .hero-photo-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .hero-center {
+      text-align: center;
+    }
+    .hero-prelude {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--taupe);
+      margin-bottom: 1.5rem;
+    }
+    .hero-names {
+      font-family: var(--font-heading);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      font-weight: 600;
+      line-height: 1.1;
+      color: var(--charcoal);
+    }
+    .hero-amp {
+      display: block;
+      font-style: italic;
+      font-size: 0.7em;
+      color: var(--dusty-rose);
+      margin: 0.3em 0;
+    }
+    .hero-meta {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      align-items: center;
+    }
+    .hero-meta .we-marry {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.15rem;
+      color: var(--dusty-rose);
+    }
+    .hero-meta .date {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--charcoal);
+    }
+    .hero-meta .time,
+    .hero-meta .venue {
+      font-size: 0.82rem;
+      color: var(--taupe);
+      letter-spacing: 0.05em;
+    }
+    .hero-cta {
+      margin-top: 2.5rem;
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media (max-width: 768px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .hero-photo { max-width: 220px; }
+      .hero-photo-wrap { order: 0; }
+      .hero-center { order: -1; }
+      .hero-photo-wrap:last-of-type { display: none; }
+    }
+
+    /* ============================================================
+       BLESSING SECTION
+       ============================================================ */
+    #blessing {
+      background: var(--white);
+      text-align: center;
+    }
+    .blessing-inner {
+      max-width: 700px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .blessing-image {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--cream), var(--blush));
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+      position: relative;
+    }
+    .blessing-image img { width: 100%; height: 100%; object-fit: cover; }
+    .blessing-image .placeholder-text {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--taupe);
+      text-align: center;
+      padding: 1rem;
+      line-height: 1.4;
+    }
+    .blessing-quote {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+      color: var(--charcoal);
+      line-height: 1.6;
+      max-width: 520px;
+    }
+    .blessing-floral {
+      color: var(--blush);
+      font-size: 2rem;
+      letter-spacing: 0.5em;
+      opacity: 0.5;
+    }
+
+    /* ============================================================
+       WEDDING DETAILS CARDS
+       ============================================================ */
+    #details { background: var(--cream); }
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .detail-card {
+      background: var(--white);
+      border: 1px solid rgba(184, 155, 112, 0.15);
+      border-radius: var(--radius-md);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      box-shadow: var(--shadow-soft);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .detail-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-hover);
+    }
+    .detail-icon {
+      width: 52px; height: 52px;
+      margin: 0 auto 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: var(--cream);
+      color: var(--gold);
+    }
+    .detail-icon svg { width: 24px; height: 24px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+    .detail-card h3 {
+      font-family: var(--font-heading);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 0.5rem;
+    }
+    .detail-card p {
+      font-size: 0.85rem;
+      color: var(--taupe);
+      letter-spacing: 0.03em;
+    }
+    @media (max-width: 900px) {
+      .details-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .details-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================================
+       COUNTDOWN
+       ============================================================ */
+    #countdown {
+      background: linear-gradient(170deg, var(--charcoal) 0%, #3a3437 100%);
+      color: var(--white);
+      text-align: center;
+    }
+    #countdown .section-label { color: var(--gold); }
+    #countdown .section-title { color: var(--white); }
+    #countdown .section-subtitle { color: rgba(255,255,255,0.6); }
+    .countdown-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.25rem;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .countdown-card {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-md);
+      padding: 2rem 0.5rem 1.5rem;
+      text-align: center;
+      transition: transform var(--transition), border-color var(--transition);
+    }
+    .countdown-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold);
+    }
+    .countdown-number {
+      font-family: var(--font-heading);
+      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-weight: 600;
+      line-height: 1;
+      color: var(--white);
+      display: block;
+      transition: opacity 0.3s ease;
+    }
+    .countdown-number.tick { opacity: 0.4; }
+    .countdown-label {
+      font-size: 0.7rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-top: 0.75rem;
+      display: block;
+    }
+    .countdown-done {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      color: var(--blush);
+    }
+    @media (max-width: 480px) {
+      .countdown-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    /* ============================================================
+       OUR STORY
+       ============================================================ */
+    #story { background: var(--ivory); }
+    .story-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .story-text {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--taupe);
+      line-height: 1.7;
+      margin-bottom: 2.5rem;
+    }
+    .story-image {
+      aspect-ratio: 4 / 5;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--cream), var(--blush));
+      border: 1px solid rgba(184, 155, 112, 0.2);
+      box-shadow: var(--shadow-medium);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: sticky;
+      top: 100px;
+    }
+    .story-image img { width: 100%; height: 100%; object-fit: cover; }
+    .story-image .placeholder-text {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--taupe);
+      text-align: center;
+      padding: 1.5rem;
+    }
+    .timeline { list-style: none; position: relative; }
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 12px; top: 8px; bottom: 8px;
+      width: 2px;
+      background: linear-gradient(to bottom, var(--gold), var(--blush));
+    }
+    .timeline-item {
+      position: relative;
+      padding-left: 3rem;
+      padding-bottom: 2.5rem;
+    }
+    .timeline-item:last-child { padding-bottom: 0; }
+    .timeline-dot {
+      position: absolute;
+      left: 5px; top: 4px;
+      width: 16px; height: 16px;
+      border-radius: 50%;
+      background: var(--white);
+      border: 2px solid var(--gold);
+    }
+    .timeline-item h4 {
+      font-family: var(--font-heading);
+      font-size: 1.35rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 0.35rem;
+    }
+    .timeline-item p {
+      font-size: 0.9rem;
+      color: var(--taupe);
+      line-height: 1.6;
+    }
+    .editable-note {
+      font-size: 0.72rem;
+      color: var(--gold);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 0.4rem;
+      display: block;
+    }
+    @media (max-width: 768px) {
+      .story-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .story-image { position: static; max-width: 360px; margin: 0 auto; }
+    }
+
+    /* ============================================================
+       PRE-WEDDING VIDEO
+       ============================================================ */
+    #video { background: var(--cream); text-align: center; }
+    .video-container {
+      max-width: 800px;
+      margin: 0 auto;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+      background: var(--charcoal);
+      border: 1px solid rgba(184, 155, 112, 0.2);
+    }
+    .video-container video {
+      width: 100%;
+      display: block;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+    }
+    .video-placeholder {
+      aspect-ratio: 16 / 9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      background: linear-gradient(135deg, var(--cream), var(--blush));
+      color: var(--taupe);
+    }
+    .video-placeholder .play-icon {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      border: 2px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+    }
+    .video-placeholder .play-icon svg { width: 28px; height: 28px; }
+    .video-placeholder p {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.1rem;
+    }
+
+    /* ============================================================
+       GALLERY
+       ============================================================ */
+    #gallery { background: var(--ivory); }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+    .gallery-item {
+      aspect-ratio: 4 / 3;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+      background: linear-gradient(135deg, var(--cream), var(--blush));
+      border: 1px solid rgba(184, 155, 112, 0.15);
+      box-shadow: var(--shadow-soft);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+    .gallery-item:hover {
+      transform: scale(1.03);
+      box-shadow: var(--shadow-hover);
+    }
+    .gallery-item img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-item .placeholder-text {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 0.95rem;
+      color: var(--taupe);
+      text-align: center;
+      padding: 1rem;
+    }
+    .gallery-item .zoom-hint {
+      position: absolute;
+      bottom: 10px; right: 10px;
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.85);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity var(--transition);
+      color: var(--charcoal);
+    }
+    .gallery-item:hover .zoom-hint { opacity: 1; }
+    .gallery-item .zoom-hint svg { width: 18px; height: 18px; }
+
+    @media (max-width: 768px) {
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr; }
+    }
+
+    /* ============================================================
+       LIGHTBOX
+       ============================================================ */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      z-index: 2000;
+      background: rgba(48, 43, 45, 0.92);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+    .lightbox.open { opacity: 1; visibility: visible; }
+    .lightbox-content {
+      max-width: 800px;
+      max-height: 85vh;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-hover);
+      transform: scale(0.9);
+      transition: transform 0.4s ease;
+    }
+    .lightbox.open .lightbox-content { transform: scale(1); }
+    .lightbox-content img {
+      width: 100%; height: auto;
+      max-height: 85vh;
+      object-fit: contain;
+      background: var(--charcoal);
+    }
+    .lightbox-content .lightbox-placeholder {
+      width: 70vw;
+      max-width: 600px;
+      aspect-ratio: 4 / 3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--cream), var(--blush));
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.2rem;
+      color: var(--taupe);
+      text-align: center;
+      padding: 2rem;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: 20px; right: 20px;
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      transition: background var(--transition), transform var(--transition);
+    }
+    .lightbox-close:hover { background: rgba(255,255,255,0.3); transform: rotate(90deg); }
+    .lightbox-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition);
+    }
+    .lightbox-nav:hover { background: rgba(255,255,255,0.3); }
+    .lightbox-nav--prev { left: 20px; }
+    .lightbox-nav--next { right: 20px; }
+    .lightbox-nav svg { width: 24px; height: 24px; }
+    @media (max-width: 600px) {
+      .lightbox-nav { width: 40px; height: 40px; }
+      .lightbox-nav--prev { left: 8px; }
+      .lightbox-nav--next { right: 8px; }
+    }
+
+    /* ============================================================
+       LOCATION
+       ============================================================ */
+    #location { background: var(--cream); }
+    .location-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .location-info h3 {
+      font-family: var(--font-heading);
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      margin-bottom: 1.5rem;
+    }
+    .location-detail {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+    .location-detail .icon {
+      width: 40px; height: 40px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold);
+      box-shadow: var(--shadow-soft);
+    }
+    .location-detail .icon svg { width: 20px; height: 20px; stroke: currentColor; fill: none; stroke-width: 1.5; }
+    .location-detail .label {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.2rem;
+    }
+    .location-detail .value {
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      color: var(--charcoal);
+    }
+    .location-info .btn { margin-top: 1.5rem; }
+
+    .location-map {
+      aspect-ratio: 4 / 3;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      box-shadow: var(--shadow-medium);
+      border: 1px solid rgba(184, 155, 112, 0.2);
+      background: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .location-map .map-placeholder {
+      text-align: center;
+      color: var(--taupe);
+      padding: 2rem;
+    }
+    .location-map .map-placeholder svg {
+      width: 48px; height: 48px;
+      margin: 0 auto 1rem;
+      stroke: var(--gold);
+      fill: none;
+      stroke-width: 1.2;
+    }
+    .location-map .map-placeholder p {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.05rem;
+    }
+    .location-map iframe { width: 100%; height: 100%; border: 0; display: block; }
+    @media (max-width: 768px) {
+      .location-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+
+    /* ============================================================
+       INVITATION MESSAGE
+       ============================================================ */
+    #invitation {
+      background: linear-gradient(170deg, var(--white) 0%, var(--cream) 100%);
+      text-align: center;
+    }
+    .invitation-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .invitation-quote {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: clamp(1.25rem, 3vw, 1.75rem);
+      color: var(--charcoal);
+      line-height: 1.6;
+    }
+    .invitation-frame {
+      border: 1px solid rgba(184, 155, 112, 0.3);
+      border-radius: var(--radius-lg);
+      padding: clamp(2.5rem, 6vw, 4rem);
+      background: var(--white);
+      box-shadow: var(--shadow-soft);
+    }
+
+    /* ============================================================
+       FAMILY BLESSINGS
+       ============================================================ */
+    #family { background: var(--ivory); }
+    .family-grid {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 2rem;
+      align-items: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .family-card {
+      text-align: center;
+      background: var(--white);
+      border: 1px solid rgba(184, 155, 112, 0.15);
+      border-radius: var(--radius-md);
+      padding: 2.5rem 1.5rem;
+      box-shadow: var(--shadow-soft);
+      transition: transform var(--transition);
+    }
+    .family-card:hover { transform: translateY(-4px); }
+    .family-card .role {
+      font-size: 0.72rem;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+    .family-card .names {
+      font-family: var(--font-heading);
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      line-height: 1.4;
+    }
+    .family-divider {
+      width: 1px;
+      height: 80px;
+      background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+    }
+    .family-divider .cross {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      background: var(--ivory);
+      padding: 0.5rem;
+    }
+    @media (max-width: 600px) {
+      .family-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+      .family-divider { width: 80px; height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); }
+    }
+
+    /* ============================================================
+       FAQ
+       ============================================================ */
+    #faq { background: var(--cream); }
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: var(--white);
+      border: 1px solid rgba(184, 155, 112, 0.15);
+      border-radius: var(--radius-md);
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      transition: box-shadow var(--transition);
+    }
+    .faq-item.open { box-shadow: var(--shadow-soft); }
+    .faq-question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.25rem 1.5rem;
+      text-align: left;
+      font-family: var(--font-heading);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--charcoal);
+      transition: color var(--transition);
+    }
+    .faq-question:hover { color: var(--dusty-rose); }
+    .faq-question .chevron {
+      width: 20px; height: 20px;
+      flex-shrink: 0;
+      transition: transform var(--transition);
+      color: var(--gold);
+    }
+    .faq-item.open .faq-question .chevron { transform: rotate(180deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+    }
+    .faq-answer-inner {
+      padding: 0 1.5rem 1.25rem;
+      font-size: 0.95rem;
+      color: var(--taupe);
+      line-height: 1.6;
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .footer {
+      background: var(--charcoal);
+      color: var(--white);
+      text-align: center;
+      padding: 4rem 1.5rem 2.5rem;
+    }
+    .footer-inner {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+    .footer .cross { color: var(--gold); }
+    .footer-names {
+      font-family: var(--font-heading);
+      font-size: 1.8rem;
+      font-weight: 600;
+    }
+    .footer-names .amp { font-style: italic; color: var(--blush); }
+    .footer-date {
+      font-size: 0.85rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .footer-venue {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.6);
+    }
+    .footer-message {
+      font-family: var(--font-heading);
+      font-style: italic;
+      font-size: 1.1rem;
+      color: var(--blush);
+      margin-top: 0.5rem;
+    }
+    .footer-note {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.4);
+      margin-top: 1.5rem;
+      letter-spacing: 0.05em;
+    }
+    .footer-floral {
+      color: var(--blush);
+      opacity: 0.4;
+      font-size: 1.5rem;
+      letter-spacing: 0.3em;
+    }
+
+    /* ============================================================
+       BACK TO TOP
+       ============================================================ */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px; right: 30px;
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: var(--dusty-rose);
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-medium);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: all var(--transition);
+      z-index: 800;
+    }
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .back-to-top:hover { background: var(--charcoal); transform: translateY(-4px); }
+    .back-to-top svg { width: 22px; height: 22px; }
+
+/* =========================
+   RSVP SECTION
+========================= */
+
+.rsvp-section {
+  padding: 100px 20px;
+}
+
+.rsvp-intro {
+  max-width: 600px;
+  margin: 20px auto 40px;
+  text-align: center;
+}
+
+.rsvp-form-wrap {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.rsvp-form {
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.form-group {
+  margin-bottom: 24px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 15px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #999;
+}
+
+.rsvp-options {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.rsvp-options label {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rsvp-options input {
+  width: auto;
+}
+
+.rsvp-submit {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: inherit;
+}
+
+.rsvp-success {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .rsvp-form {
+    padding: 25px 20px;
+  }
+
+  .rsvp-options {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+video {
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  .nav,
+  .nav-inner,
+  .site,
+  main,
+  section,
+  .section-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .nav-inner {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero {
+    min-height: auto;
+  }
+
+  .hero-inner {
+    width: 100%;
+    padding: 58px 18px 65px;
+    gap: 35px;
+  }
+
+  .hero-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.65rem, 13vw, 4rem);
+    overflow-wrap: normal;
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+  }
+
+  .hero-meta {
+    width: 100%;
+  }
+
+  .hero-visual {
+    width: 100%;
+    min-height: 350px;
+  }
+
+  .hero-visual:before {
+    width: 76vw;
+    height: 76vw;
+    min-width: 0;
+    min-height: 0;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .portrait {
+    width: min(72vw, 300px);
+    height: min(92vw, 390px);
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .floral-one {
+    right: 0;
+  }
+
+  .floral-two {
+    left: 0;
+  }
+
+  section {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .section-inner {
+    width: 100%;
+  }
+
+  .section-heading {
+    width: 100%;
+  }
+
+  .section-heading h2 {
+    overflow-wrap: break-word;
+  }
+
+  .god-frame {
+    width: min(82vw, 400px);
+    max-width: 400px;
+  }
+
+  .god-copy,
+  .about-copy,
+  .location-copy {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .detail-grid {
+    width: 100%;
+  }
+
+  .detail-card {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .detail-card h3 {
+    overflow-wrap: anywhere;
+  }
+
+  .timer {
+    width: 100%;
+    max-width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .time-box {
+    min-width: 0;
+    padding: 18px 6px;
+  }
+
+  .time-box strong {
+    font-size: clamp(1.8rem, 10vw, 3rem);
+  }
+
+  .quote {
+    width: 100%;
+    padding: 30px 8px;
+  }
+
+  .quote p {
+    font-size: clamp(1.15rem, 5.5vw, 1.5rem);
+    overflow-wrap: break-word;
+  }
+
+  .gallery-grid {
+    width: 100%;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-item {
+    min-width: 0;
+  }
+
+  .video-frame {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+  }
+
+  .location-grid {
+    width: 100%;
+  }
+
+  .location-copy h2 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .family-card,
+  .final .section-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  .music-toggle {
+    right: max(14px, env(safe-area-inset-right));
+    bottom: max(14px, env(safe-area-inset-bottom));
+  }
+}
+
+@media (max-width: 430px) {
+  .nav-inner {
+    padding-top: 13px;
+    padding-bottom: 13px;
+  }
+
+  .hero-inner {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .hero-visual {
+    min-height: 320px;
+  }
+
+  .hero-visual:before {
+    width: 72vw;
+    height: 72vw;
+    max-width: 270px;
+    max-height: 270px;
+  }
+
+  .portrait {
+    width: min(70vw, 270px);
+    height: min(88vw, 350px);
+  }
+
+  .hero-meta {
+    font-size: 12px;
+    gap: 11px;
+  }
+
+  .hero-meta span {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .gallery-grid {
+    grid-auto-rows: minmax(120px, 34vw);
+  }
+
+  .map-card {
+    min-height: 250px;
+    padding: 22px 16px;
+  }
+
+  .button {
+    max-width: 100%;
+  }
+
+  .opening-stage {
+    padding: 14px;
+  }
+
+  .envelope-wrap {
+    width: 94vw;
+    max-width: 94vw;
+    height: min(56vh, 470px);
+    min-height: 260px;
+  }
+
+  .invite-card {
+    left: 16%;
+    right: 16%;
+    padding: 16px 8px;
+  }
+
+  .invite-card strong {
+    font-size: clamp(1.15rem, 6vw, 1.8rem);
+  }
+
+  .floral-branch {
+    pointer-events: none;
+  }
+}
+    /* ============================================================
+       REDUCED MOTION
+       ============================================================ */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .reveal { opacity: 1; transform: none; }
+      .petal { display: none; }
+    }
+
+    /* Focus visible */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--gold);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+  </style>
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <!-- ============================================================
+       SECTION 1: WELCOME / OPENING SCREEN
+       ============================================================ -->
+  <div id="welcome">
+    <!-- Decorative petals -->
+    <span class="petal" style="top:15%;left:20%;animation-delay:0s;"></span>
+    <span class="petal" style="top:30%;left:75%;animation-delay:3s;"></span>
+    <span class="petal" style="top:60%;left:10%;animation-delay:6s;"></span>
+    <span class="petal" style="top:70%;left:85%;animation-delay:9s;"></span>
+    <span class="petal" style="top:45%;left:50%;animation-delay:4.5s;"></span>
+
+    <div class="welcome-content">
+      <p class="welcome-label">A Sacred Beginning</p>
+      <h1 class="welcome-title">
+        Raai Rupa
+        <span class="amp">&amp;</span>
+        Raai Naresh
+      </h1>
+      <p class="welcome-message">
+        In the presence of God and surrounded by the love of family and friends, we invite you to celebrate the beginning of our beautiful journey together.
+      </p>
+      <button class="btn btn--primary" id="openInvitation" type="button">Open Invitation</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="navbar" aria-label="Main navigation">
+    <a href="#hero" class="nav-brand">Raai Rupa <span class="amp">&amp;</span> Raai Naresh</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#story">Our Story</a></li>
+      <li><a href="#details">Wedding Details</a></li>
+      <li><a href="#countdown">Countdown</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <!-- ============================================================
+         SECTION 2: CHRISTIAN BLESSING / GOD PHOTO
+         ============================================================ -->
+    <section id="blessing" class="section">
+      <div class="blessing-inner reveal">
+        <p class="section-label">With God's Blessings</p>
+       <img src="Images/God.jpg" alt="Christian blessing image" class="blessing-image" />
+        <p class="blessing-quote">
+          Two hearts, one promise, and a lifetime of love, guided by faith and blessed by God.
+        </p>
+        <div class="blessing-floral">&#10047; &#10047; &#10047;</div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 3: HERO — THE COUPLE
+         ============================================================ -->
+    <section id="hero">
+      <div class="hero-bg-shape hero-bg-shape--1"></div>
+      <div class="hero-bg-shape hero-bg-shape--2"></div>
+      <div class="hero-inner">
+<!-- Bride Photo -->
+<div class="hero-photo-wrap reveal">
+  <img 
+    src="Images/bride.jpeg" 
+    alt="The Bride"
+    class="hero-photo"
+  />
+  <span class="hero-photo-label">The Bride</span>
+</div>        <div class="hero-center reveal reveal-delay-1">
+          <p class="hero-prelude">Together with their families</p>
+          <h1 class="hero-names">
+            Raai Rupa Sri Sai Lakshmi
+            <span class="hero-amp">&amp;</span>
+            Raai Naresh
+          </h1>
+          <div class="hero-meta">
+            <p class="we-marry">We are getting married</p>
+            <hr class="divider" style="margin: 0.75rem auto;">
+            <p class="date">Tuesday, 9 March 2027</p>
+            <p class="time">05:50 AM</p>
+            <p class="venue">Luthern Church</p>
+          </div>
+          <div class="hero-cta">
+            <button class="btn btn--primary" data-scroll="#details" type="button">View Wedding Details</button>
+            <button class="btn btn--secondary" id="saveDateBtn" type="button">Save the Date</button>
+            <button class="btn btn--gold" data-scroll="#location" type="button">View Location</button>
+          </div>
+        </div>
+
+        <!-- Bride Photo -->
+<div class="hero-photo-wrap reveal">
+  <img 
+    src="Images/groom.jpg" 
+    alt="The Bride"
+    class="hero-photo"
+  />
+  <span class="hero-photo-label">The Bride</span>
+</div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 4: WEDDING DATE & DETAILS
+         ============================================================ -->
+    <section id="details" class="section">
+      <div class="section-inner text-center">
+        <div class="reveal">
+          <p class="section-label">Our Special Day</p>
+          <h2 class="section-title">Wedding Details</h2>
+          <hr class="divider">
+        </div>
+        <div class="details-grid">
+          <div class="detail-card reveal">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg>
+            </div>
+            <h3>Wedding Date</h3>
+            <p>Tuesday, 9 March 2027</p>
+          </div>
+          <div class="detail-card reveal reveal-delay-1">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg>
+            </div>
+            <h3>Wedding Time</h3>
+            <p>05:50 AM</p>
+          </div>
+          <div class="detail-card reveal reveal-delay-2">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2C7 2 3 6 3 11c0 6 9 11 9 11s9-5 9-11c0-5-4-9-9-9z"/><circle cx="12" cy="11" r="3"/></svg>
+            </div>
+            <h3>Wedding Venue</h3>
+            <p>Luthern Church</p>
+          </div>
+          <div class="detail-card reveal reveal-delay-3">
+            <div class="detail-icon">
+              <svg viewBox="0 0 24 24"><path d="M12 2v8"/><rect x="8" y="10" width="8" height="12" rx="1"/><path d="M10 6h4"/></svg>
+            </div>
+            <h3>Ceremony</h3>
+            <p>Christian Marriage</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 5: LIVE COUNTDOWN TIMER
+         ============================================================ -->
+    <section id="countdown" class="section">
+      <div class="section-inner text-center">
+        <div class="reveal">
+          <p class="section-label">Counting Down</p>
+          <h2 class="section-title">Counting Down to Our Special Day</h2>
+          <p class="section-subtitle">Every second brings us closer to a beautiful new beginning.</p>
+        </div>
+        <div class="countdown-grid reveal" id="countdownGrid" role="timer" aria-live="polite" aria-atomic="true">
+          <div class="countdown-card">
+            <span class="countdown-number" id="cd-days">000</span>
+            <span class="countdown-label">Days</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-number" id="cd-hours">00</span>
+            <span class="countdown-label">Hours</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-number" id="cd-minutes">00</span>
+            <span class="countdown-label">Minutes</span>
+          </div>
+          <div class="countdown-card">
+            <span class="countdown-number" id="cd-seconds">00</span>
+            <span class="countdown-label">Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 6: OUR STORY
+         ============================================================ -->
+    <section id="story" class="section">
+      <div class="section-inner">
+        <div class="text-center reveal">
+          <p class="section-label">Our Journey</p>
+          <h2 class="section-title">Our Love Story</h2>
+          <hr class="divider">
+        </div>
+        <div class="story-grid">
+          <div class="reveal">
+            <p class="story-text">
+              Every love story is special, and ours is a beautiful journey guided by faith, family, and God's blessings. This space can be updated with our personal story, from the beginning of our journey to the day we begin our life together.
+            </p>
+            <ul class="timeline">
+              <li class="timeline-item">
+                <span class="timeline-dot"></span>
+                <h4>Our Beginning</h4>
+                <p>The first chapter of our story — where it all began.</p>
+                <span class="editable-note">Editable placeholder</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-dot"></span>
+                <h4>A Journey of Faith</h4>
+                <p>Growing together in love and trust, guided by our faith.</p>
+                <span class="editable-note">Editable placeholder</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-dot"></span>
+                <h4>The Promise</h4>
+                <p>The moment we chose to walk side by side for a lifetime.</p>
+                <span class="editable-note">Editable placeholder</span>
+              </li>
+              <li class="timeline-item">
+                <span class="timeline-dot"></span>
+                <h4>Our Wedding Day</h4>
+                <p>9 March 2027 — the day our forever begins.</p>
+                <span class="editable-note">Editable placeholder</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Couple Photo -->
+<div class="story-image reveal reveal-delay-1">
+  <img src="Images/couple.jpeg" alt="Couple Photo">
+</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 7: PRE-WEDDING VIDEO
+         ============================================================ -->
+    <section id="video" class="section">
+      <div class="section-inner">
+        <div class="reveal">
+          <p class="section-label">A Glimpse of Us</p>
+          <h2 class="section-title">Our Pre-Wedding Moments</h2>
+          <p class="section-subtitle">A glimpse of the beautiful memories we share as we begin this new chapter together.</p>
+        </div>
+        <div class="video-container reveal reveal-delay-1">
+         
+          <video controls playsinline preload="metadata" poster="images/video-poster.jpg">
+            <source src="pre-wedding-video.mp4" type="video/mp4">
+            Your browser does not support video playback.
+          </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 8: PHOTO GALLERY
+         ============================================================ -->
+    <section id="gallery" class="section">
+  <div class="section-inner">
+
+    <div class="text-center reveal">
+      <p class="section-label">Cherished Moments</p>
+      <h2 class="section-title">Captured Memories</h2>
+      <hr class="divider">
+    </div>
+
+    <div class="gallery-grid reveal" id="galleryGrid">
+
+      <figure class="gallery-item" data-index="0" role="button" tabindex="0" aria-label="Bride Photo - open in lightbox">
+        <img src="Images/bride.jpeg" alt="Bride Photo" loading="lazy">
+        <div class="zoom-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16" y1="16" x2="21" y2="21"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+      </figure>
+
+      <figure class="gallery-item" data-index="1" role="button" tabindex="0" aria-label="Groom Photo - open in lightbox">
+        <img src="Images/groom.jpg" alt="Groom Photo" loading="lazy">
+        <div class="zoom-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16" y1="16" x2="21" y2="21"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+      </figure>
+
+      <figure class="gallery-item" data-index="2" role="button" tabindex="0" aria-label="Couple Photo - open in lightbox">
+        <img src="Images/couple.jpeg" alt="Couple Photo" loading="lazy">
+        <div class="zoom-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16" y1="16" x2="21" y2="21"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+      </figure>
+
+      <figure class="gallery-item" data-index="3" role="button" tabindex="0" aria-label="Pre-Wedding Photo 1 - open in lightbox">
+        <img src="Images/couple2.jpg" alt="Pre-Wedding Photo 1" loading="lazy">
+        <div class="zoom-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16" y1="16" x2="21" y2="21"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+      </figure>
+
+      <figure class="gallery-item" data-index="4" role="button" tabindex="0" aria-label="Pre-Wedding Photo 2 - open in lightbox">
+        <img src="Images/couple3.jpg" alt="Pre-Wedding Photo 2" loading="lazy">
+        <div class="zoom-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16" y1="16" x2="21" y2="21"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+      </figure>
+
+      <figure class="gallery-item" data-index="5" role="button" tabindex="0" aria-label="Wedding Photo 1 - open in lightbox">
+        <img src="Images/couple4.jpg" alt="Wedding Photo 1" loading="lazy">
+        <div class="zoom-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16" y1="16" x2="21" y2="21"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+      </figure>
+
+      <figure class="gallery-item" data-index="6" role="button" tabindex="0" aria-label="Wedding Photo 2 - open in lightbox">
+        <img src="Images/Christian.jpg" alt="Wedding Photo 2" loading="lazy">
+        <div class="zoom-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16" y1="16" x2="21" y2="21"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+      </figure>
+
+      <figure class="gallery-item" data-index="7" role="button" tabindex="0" aria-label="Family Photo - open in lightbox">
+        <img src="images/God.jpg" alt="Family Photo" loading="lazy">
+        <div class="zoom-hint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16" y1="16" x2="21" y2="21"/>
+            <line x1="11" y1="8" x2="11" y2="14"/>
+            <line x1="8" y1="11" x2="14" y2="11"/>
+          </svg>
+        </div>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ============================================================
+         SECTION 9: WEDDING LOCATION
+         ============================================================ -->
+    <section id="location" class="section">
+      <div class="section-inner">
+        <div class="text-center reveal">
+          <p class="section-label">The Venue</p>
+          <h2 class="section-title">Join Us at the Church</h2>
+          <hr class="divider">
+        </div>
+        <div class="location-grid">
+          <div class="location-info reveal">
+            <h3>Luthern Church</h3>
+            <div class="location-detail">
+              <div class="icon"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/></svg></div>
+              <div>
+                <p class="label">Date</p>
+                <p class="value">9 March 2027</p>
+              </div>
+            </div>
+            <div class="location-detail">
+              <div class="icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><polyline points="12,7 12,12 15,14"/></svg></div>
+              <div>
+                <p class="label">Time</p>
+                <p class="value">05:50 AM</p>
+              </div>
+            </div>
+            <div class="location-detail">
+              <div class="icon"><svg viewBox="0 0 24 24"><path d="M12 2C7 2 3 6 3 11c0 6 9 11 9 11s9-5 9-11c0-5-4-9-9-9z"/><circle cx="12" cy="11" r="3"/></svg></div>
+              <div>
+                <p class="label">Venue</p>
+                <p class="value">Luthern Church</p>
+              </div>
+            </div>
+            <button class="btn btn--primary" id="directionsBtn" type="button">Get Directions</button>
+          </div>
+          <div class="location-map reveal reveal-delay-1" id="mapContainer">
+            <div class="map-placeholder">
+              <svg viewBox="0 0 24 24"><path d="M12 2C7 2 3 6 3 11c0 6 9 11 9 11s9-5 9-11c0-5-4-9-9-9z"/><circle cx="12" cy="11" r="3"/></svg>
+              <p>Map preview will appear here<br>once Google Maps link is configured</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION 10: WEDDING INVITATION MESSAGE
+         ============================================================ -->
+    <section id="rsvp" class="section rsvp-section">
+  <div class="section-inner">
+
+    <div class="text-center reveal">
+      <p class="section-label">We'd Love to Have You</p>
+      <h2 class="section-title">RSVP</h2>
+      <hr class="divider">
+
+      <p class="rsvp-intro">
+        Please let us know if you'll be joining us on our special day.
+      </p>
+    </div>
+
+    <div class="rsvp-form-wrap reveal">
+
+      <form id="rsvpForm" class="rsvp-form">
+
+        <div class="form-group">
+          <label for="guestName">Your Name</label>
+          <input
+            type="text"
+            id="guestName"
+            name="guestName"
+            placeholder="Enter your name"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="guestEmail">Email</label>
+          <input
+            type="email"
+            id="guestEmail"
+            name="guestEmail"
+            placeholder="Enter your email"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="guestCount">Number of Guests</label>
+
+          <select id="guestCount" name="guestCount" required>
+            <option value="">Select</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5 Guests</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Will you be attending?</label>
+
+          <div class="rsvp-options">
+
+            <label>
+              <input
+                type="radio"
+                name="attendance"
+                value="Joyfully Accept"
+                required
+              >
+              Joyfully Accept
+            </label>
+
+            <label>
+              <input
+                type="radio"
+                name="attendance"
+                value="Regretfully Decline"
+              >
+              Regretfully Decline
+            </label>
+
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="guestMessage">Message</label>
+
+          <textarea
+            id="guestMessage"
+            name="guestMessage"
+            rows="4"
+            placeholder="Leave a message for the couple..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="rsvp-submit">
+          Send RSVP on WhatsApp
+        </button>
+
+        <p id="rsvpMessage" class="rsvp-success"></p>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ============================================================
+         SECTION 11: FAMILY BLESSINGS
+         ============================================================ -->
+    <section id="family" class="section">
+      <div class="section-inner">
+        <div class="text-center reveal">
+          <p class="section-label">With Gratitude</p>
+          <h2 class="section-title">With the Blessings of Our Families</h2>
+          <hr class="divider">
+        </div>
+        <div class="family-grid reveal reveal-delay-1">
+          <div class="family-card">
+            <p class="role">Bride's Parents</p>
+            <p class="names">Devarapu Srinivasu<br>&amp;<br>Surya Kumari</p>
+          </div>
+          <div class="family-divider" style="position:relative;">
+            <span class="cross cross--sm" style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--ivory);padding:0.5rem;"><span class="bar-v"></span><span class="bar-h"></span></span>
+          </div>
+          <div class="family-card">
+            <p class="role">Groom's Parents</p>
+            <p class="names">Raai Satyanarayana<br>&amp;<br>Durga</p>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- ============================================================
+       SECTION 13: FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <span class="cross"><span class="bar-v"></span><span class="bar-h"></span></span>
+      <p class="footer-names">Raai Rupa <span class="amp">&amp;</span> Raai Naresh</p>
+      <p class="footer-date">9 March 2027</p>
+      <p class="footer-venue">Luthern Church</p>
+      <p class="footer-message">With love, faith, and God's blessings.</p>
+      <div class="footer-floral">&#10047;</div>
+      <p class="footer-note">Made with love for a beautiful beginning.</p>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       BACK TO TOP
+       ============================================================ -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18,15 12,9 6,15"/></svg>
+  </button>
+
+  <!-- ============================================================
+       LIGHTBOX MODAL
+       ============================================================ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image gallery viewer">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close lightbox">&times;</button>
+    <button class="lightbox-nav lightbox-nav--prev" id="lightboxPrev" type="button" aria-label="Previous image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15,18 9,12 15,6"/></svg>
+    </button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+    <button class="lightbox-nav lightbox-nav--next" id="lightboxNext" type="button" aria-label="Next image">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9,18 15,12 9,6"/></svg>
+    </button>
+  </div>
+
+  <script>
+    /* ============================================================
+       WEDDING CONFIGURATION
+       Edit these values to customize the wedding details.
+       ============================================================ */
+    const WEDDING_CONFIG = {
+      brideName:   'Raai Rupa Sri Sai Lakshmi',
+      groomName:   'Raai Naresh',
+      weddingDate: '2027-03-09',        // YYYY-MM-DD
+      weddingTime: '05:50',             // HH:MM (24-hour)
+      // Timezone offset in minutes from UTC.
+      // IST (India Standard Time) = +330 minutes = UTC+5:30
+      // Change this if your wedding is in a different timezone.
+      timezoneOffset: 330,
+      venue:       'Luthern Church',
+      // Google Maps URL — paste your maps link here to enable directions.
+      // Example: "https://www.google.com/maps?q=Luthern+Church"
+      mapUrl:      ''  // PASTE_GOOGLE_MAPS_LINK_HERE
+    };
+
+    /* ============================================================
+       1. OPEN INVITATION
+       ============================================================ */
+    (function() {
+      const welcome = document.getElementById('welcome');
+      const openBtn = document.getElementById('openInvitation');
+      openBtn.addEventListener('click', function() {
+        welcome.classList.add('hidden');
+        // Smooth scroll to hero after the fade
+        setTimeout(function() {
+          document.getElementById('hero').scrollIntoView({ behavior: 'smooth' });
+        }, 600);
+      });
+      // Allow Escape to dismiss welcome
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && !welcome.classList.contains('hidden')) {
+          welcome.classList.add('hidden');
+        }
+      });
+    })();
+
+    /* ============================================================
+       2. NAVIGATION — sticky, scroll state, mobile toggle
+       ============================================================ */
+    (function() {
+      const nav = document.getElementById('navbar');
+      const toggle = document.getElementById('navToggle');
+      const links = document.getElementById('navLinks');
+
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 60) {
+          nav.classList.add('scrolled');
+        } else {
+          nav.classList.remove('scrolled');
+        }
+      });
+
+      toggle.addEventListener('click', function() {
+        const isOpen = links.classList.toggle('open');
+        toggle.classList.toggle('open', isOpen);
+        toggle.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      // Close mobile menu on link click
+      links.querySelectorAll('a').forEach(function(a) {
+        a.addEventListener('click', function() {
+          links.classList.remove('open');
+          toggle.classList.remove('open');
+          toggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+
+    /* ============================================================
+       3. SMOOTH SCROLL FOR data-scroll BUTTONS
+       ============================================================ */
+    (function() {
+      document.querySelectorAll('[data-scroll]').forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          const target = document.querySelector(btn.dataset.scroll);
+          if (target) target.scrollIntoView({ behavior: 'smooth' });
+        });
+      });
+    })();
+
+    /* ============================================================
+       4. COUNTDOWN TIMER
+       ============================================================ */
+    (function() {
+      const daysEl    = document.getElementById('cd-days');
+      const hoursEl   = document.getElementById('cd-hours');
+      const minutesEl = document.getElementById('cd-minutes');
+      const secondsEl = document.getElementById('cd-seconds');
+      const grid      = document.getElementById('countdownGrid');
+
+      // Build target date from config, applying the timezone offset
+      function getTargetTime() {
+        const parts = WEDDING_CONFIG.weddingDate.split('-');
+        const timeParts = WEDDING_CONFIG.weddingTime.split(':');
+        // Create date in the configured timezone, then convert to UTC
+        // local time = UTC - offset, so UTC = local + offset
+        const localDate = new Date(Date.UTC(
+          parseInt(parts[0]),
+          parseInt(parts[1]) - 1,
+          parseInt(parts[2]),
+          parseInt(timeParts[0]),
+          parseInt(timeParts[1]),
+          0, 0
+        ));
+        // Subtract the timezone offset to get the correct UTC instant
+        return new Date(localDate.getTime() - WEDDING_CONFIG.timezoneOffset * 60000);
+      }
+
+      const target = getTargetTime();
+
+      function pad(n, len) {
+        len = len || 2;
+        return String(Math.max(0, n)).padStart(len, '0');
+      }
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const diff = target.getTime() - now;
+
+        if (isNaN(target.getTime())) {
+          grid.innerHTML = '<p class="countdown-done">Wedding date is being configured.</p>';
+          clearInterval(timerId);
+          return;
+        }
+
+        if (diff <= 0) {
+          daysEl.textContent = '000';
+          hoursEl.textContent = '00';
+          minutesEl.textContent = '00';
+          secondsEl.textContent = '00';
+          grid.innerHTML = '<p class="countdown-done">Today is our wedding day! Join us in celebration.</p>';
+          clearInterval(timerId);
+          return;
+        }
+
+        const d = Math.floor(diff / 86400000);
+        const h = Math.floor((diff % 86400000) / 3600000);
+        const m = Math.floor((diff % 3600000) / 60000);
+        const s = Math.floor((diff % 60000) / 1000);
+
+        daysEl.textContent    = pad(d, 3);
+        hoursEl.textContent   = pad(h);
+        minutesEl.textContent = pad(m);
+        secondsEl.textContent = pad(s);
+      }
+
+      updateCountdown();
+      var timerId = setInterval(updateCountdown, 1000);
+    })();
+
+    /* ============================================================
+       5. SCROLL REVEAL ANIMATIONS
+       ============================================================ */
+    (function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -50px 0px' });
+
+      document.querySelectorAll('.reveal').forEach(function(el) {
+        observer.observe(el);
+      });
+    })();
+
+    /* ============================================================
+       6. GALLERY LIGHTBOX
+       ============================================================ */
+    (function() {
+      var items = Array.prototype.slice.call(document.querySelectorAll('.gallery-item'));
+      var lightbox = document.getElementById('lightbox');
+      var lightboxContent = document.getElementById('lightboxContent');
+      var closeBtn = document.getElementById('lightboxClose');
+      var prevBtn = document.getElementById('lightboxPrev');
+      var nextBtn = document.getElementById('lightboxNext');
+      var currentIndex = 0;
+      var lastFocused = null;
+
+      function getPlaceholderText(item) {
+        var p = item.querySelector('.placeholder-text');
+        return p ? p.textContent.trim() : 'Photo';
+      }
+
+      function showImage(index) {
+        var item = items[index];
+        if (!item) return;
+        currentIndex = index;
+        var img = item.querySelector('img');
+        var alt = item.getAttribute('aria-label') || 'Gallery image';
+        if (img) {
+          lightboxContent.innerHTML = '<img src="' + img.getAttribute('src') + '" alt="' + alt + '">';
+        } else {
+          lightboxContent.innerHTML = '<div class="lightbox-placeholder">' + getPlaceholderText(item) + '</div>';
+        }
+      }
+
+      function openLightbox(index) {
+        lastFocused = document.activeElement;
+        currentIndex = index;
+        showImage(index);
+        lightbox.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        closeBtn.focus();
+      }
+
+      function closeLightbox() {
+        lightbox.classList.remove('open');
+        document.body.style.overflow = '';
+        if (lastFocused) lastFocused.focus();
+      }
+
+      function nextImage() {
+        showImage((currentIndex + 1) % items.length);
+      }
+
+      function prevImage() {
+        showImage((currentIndex - 1 + items.length) % items.length);
+      }
+
+      items.forEach(function(item, i) {
+        item.addEventListener('click', function() { openLightbox(i); });
+        item.addEventListener('keydown', function(e) {
+          if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            openLightbox(i);
+          }
+        });
+      });
+
+      closeBtn.addEventListener('click', closeLightbox);
+      nextBtn.addEventListener('click', nextImage);
+      prevBtn.addEventListener('click', prevImage);
+
+      lightbox.addEventListener('click', function(e) {
+        if (e.target === lightbox) closeLightbox();
+      });
+
+      document.addEventListener('keydown', function(e) {
+        if (!lightbox.classList.contains('open')) return;
+        if (e.key === 'Escape') closeLightbox();
+        if (e.key === 'ArrowRight') nextImage();
+        if (e.key === 'ArrowLeft') prevImage();
+      });
+    })();
+
+    /* ============================================================
+       7. FAQ ACCORDION
+       ============================================================ */
+    (function() {
+      var items = document.querySelectorAll('.faq-item');
+
+      items.forEach(function(item) {
+        var question = item.querySelector('.faq-question');
+        var answer = item.querySelector('.faq-answer');
+
+        question.addEventListener('click', function() {
+          var isOpen = item.classList.contains('open');
+
+          // Close all
+          items.forEach(function(other) {
+            other.classList.remove('open');
+            other.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+            other.querySelector('.faq-answer').style.maxHeight = '0';
+          });
+
+          // Open the clicked one if it was closed
+          if (!isOpen) {
+            item.classList.add('open');
+            question.setAttribute('aria-expanded', 'true');
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+          }
+        });
+      });
+    })();
+
+    /* ============================================================
+       8. GET DIRECTIONS BUTTON
+       ============================================================ */
+    (function() {
+      var btn = document.getElementById('directionsBtn');
+      var mapContainer = document.getElementById('mapContainer');
+
+      btn.addEventListener('click', function() {
+        var url = WEDDING_CONFIG.mapUrl.trim();
+        if (url) {
+          window.open(url, '_blank', 'noopener');
+        } else {
+          // Friendly inline message instead of opening a bad link
+          var existing = mapContainer.querySelector('.map-error');
+          if (existing) existing.remove();
+          var msg = document.createElement('p');
+          msg.className = 'map-error';
+          msg.style.cssText = 'font-family:var(--font-heading);font-style:italic;color:var(--dusty-rose);font-size:0.95rem;text-align:center;padding:1rem;position:absolute;bottom:1rem;left:1rem;right:1rem;background:rgba(255,253,249,0.9);border-radius:10px;';
+          msg.textContent = 'Google Maps link not yet configured. Please add it in the WEDDING_CONFIG section of the code.';
+          mapContainer.appendChild(msg);
+          setTimeout(function() {
+            if (msg.parentNode) msg.remove();
+          }, 4000);
+        }
+      });
+
+      // If map URL is configured, embed the map iframe
+      if (WEDDING_CONFIG.mapUrl.trim()) {
+        var placeholder = mapContainer.querySelector('.map-placeholder');
+        if (placeholder) placeholder.remove();
+        // Try to extract coordinates or use the URL in an embed
+        var embedUrl = WEDDING_CONFIG.mapUrl
+          .replace('/maps?', '/maps/embed?')
+          .replace('q=', 'q=');
+        // Fallback: use a simple embed with the search query
+        if (WEDDING_CONFIG.mapUrl.indexOf('embed') === -1) {
+          var match = WEDDING_CONFIG.mapUrl.match(/q=([^&]+)/);
+          var query = match ? decodeURIComponent(match[1]) : WEDDING_CONFIG.venue;
+          embedUrl = 'https://www.google.com/maps?q=' + encodeURIComponent(query) + '&output=embed';
+        }
+        var iframe = document.createElement('iframe');
+        iframe.src = embedUrl;
+        iframe.setAttribute('loading', 'lazy');
+        iframe.setAttribute('title', 'Map to ' + WEDDING_CONFIG.venue);
+        mapContainer.appendChild(iframe);
+      }
+    })();
+
+    /* ============================================================
+       9. BACK TO TOP
+       ============================================================ */
+    (function() {
+      var btn = document.getElementById('backToTop');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 500) {
+          btn.classList.add('visible');
+        } else {
+          btn.classList.remove('visible');
+        }
+      });
+      btn.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    })();
+  // WhatsApp number that will receive the RSVP
+  const RSVP_WHATSAPP_NUMBER = "9197051388xx";
+
+  // Open RSVP form when "Submit RSVP" is clicked
+  function openRSVP() {
+    const rsvpSection = document.getElementById("rsvp");
+
+    if (rsvpSection) {
+      rsvpSection.scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    }
+  }
+
+  // Handle RSVP form submission
+  document.getElementById("rsvpForm").addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    const name = document.getElementById("guestName").value.trim();
+    const email = document.getElementById("guestEmail").value.trim();
+    const guestCount = document.getElementById("guestCount").value;
+    const attendance = document.querySelector(
+      'input[name="attendance"]:checked'
+    )?.value;
+
+    const message = document.getElementById("guestMessage").value.trim();
+
+    const whatsappMessage =
+`💍 Wedding RSVP
+
+👤 Name: ${name}
+📧 Email: ${email}
+👥 Number of Guests: ${guestCount}
+💌 Attendance: ${attendance}
+💬 Message: ${message || "No message"}
+
+Thank you! ❤️`;
+
+    const whatsappURL =
+      "https://wa.me/" +
+      RSVP_WHATSAPP_NUMBER +
+      "?text=" +
+      encodeURIComponent(whatsappMessage);
+
+    window.open(whatsappURL, "_blank");
+
+  });
+    /* ============================================================
+       10. SAVE THE DATE — .ics calendar file download
+       ============================================================ */
+    (function() {
+      var btn = document.getElementById('saveDateBtn');
+      btn.addEventListener('click', function() {
+        // Build the wedding date/time in the configured timezone for ICS
+        // ICS uses UTC with Z suffix
+        var parts = WEDDING_CONFIG.weddingDate.split('-');
+        var timeParts = WEDDING_CONFIG.weddingTime.split(':');
+
+        // Create a date in UTC representing the local wedding time
+        var localMs = Date.UTC(
+          parseInt(parts[0]),
+          parseInt(parts[1]) - 1,
+          parseInt(parts[2]),
+          parseInt(timeParts[0]),
+          parseInt(timeParts[1]),
+          0, 0
+        );
+        // Adjust for timezone offset: UTC = local + offset
+        var utcDate = new Date(localMs - WEDDING_CONFIG.timezoneOffset * 60000);
+
+        function padICS(n) { return String(n).padStart(2, '0'); }
+        var dtStart = utcDate.getUTCFullYear() +
+                      padICS(utcDate.getUTCMonth() + 1) +
+                      padICS(utcDate.getUTCDate()) + 'T' +
+                      padICS(utcDate.getUTCHours()) +
+                      padICS(utcDate.getUTCMinutes()) +
+                      padICS(utcDate.getUTCSeconds()) + 'Z';
+
+        // Duration: 2 hours
+        var endMs = utcDate.getTime() + 2 * 3600000;
+        var end = new Date(endMs);
+        var dtEnd = end.getUTCFullYear() +
+                    padICS(end.getUTCMonth() + 1) +
+                    padICS(end.getUTCDate()) + 'T' +
+                    padICS(end.getUTCHours()) +
+                    padICS(end.getUTCMinutes()) +
+                    padICS(end.getUTCSeconds()) + 'Z';
+
+        var ics = [
+          'BEGIN:VCALENDAR',
+          'VERSION:2.0',
+          'PRODID:-//Wedding Invitation//Raai Rupa and Raai Naresh//EN',
+          'CALSCALE:GREGORIAN',
+          'BEGIN:VEVENT',
+          'UID:raai-wedding-2027-03-09@invitation',
+          'DTSTAMP:' + dtStart,
+          'DTSTART:' + dtStart,
+          'DTEND:' + dtEnd,
+          'SUMMARY:Raai Rupa & Raai Naresh - Christian Wedding',
+          'DESCRIPTION:Christian wedding ceremony of Raai Rupa Sri Sai Lakshmi and Raai Naresh.',
+          'LOCATION:' + WEDDING_CONFIG.venue,
+          'BEGIN:VALARM',
+          'TRIGGER:-PT15M',
+          'ACTION:DISPLAY',
+          'DESCRIPTION:Wedding in 15 minutes',
+          'END:VALARM',
+          'END:VEVENT',
+          'END:VCALENDAR'
+        ].join('\r\n');
+
+        var blob = new Blob([ics], { type: 'text/calendar;charset=utf-8' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'raai-rupa-naresh-wedding.ics';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+      });
+    })();
+  </script>
+</body>
+</html>
