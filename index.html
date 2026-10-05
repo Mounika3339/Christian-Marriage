@@ -406,6 +406,43 @@
     .nav-toggle.open span:nth-child(3) { transform: rotate(-45deg) translate(7px, -7px); }
 
     @media (max-width: 768px) {
+      .hero-inner {
+  width: 100%;
+  padding: 58px 18px 65px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-photo-wrap {
+  display: block !important;
+  width: 100%;
+  text-align: center;
+}
+
+.hero-photo {
+  display: block !important;
+  width: min(75vw, 280px);
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.hero-center {
+  width: 100%;
+  text-align: center;
+  order: 2;
+}
+
+.hero-photo-wrap:first-child {
+  order: 1;
+}
+
+.hero-photo-wrap:last-child {
+  order: 3;
+}
       .nav-toggle { display: flex; }
       .nav-links {
         position: fixed;
